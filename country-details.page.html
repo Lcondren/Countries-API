@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>CountryDetails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <img src="{{ countryFlags }}"/>
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>{{ countryData }}</ion-card-title>
+    <ion-card-subtitle>{{ countryCapital }}</ion-card-subtitle>
+    <ion-card-subtitle> {{ countryWeather }} </ion-card-subtitle>
+    <ion-card-subtitle> {{ countryPopulation | number: '1.0' }} </ion-card-subtitle>
+    <ion-card-subtitle *ngFor="let c of countryCurrency  | keyvalue"> 
+    {{ c.value }} </ion-card-subtitle>
+   </ion-card-header>
+       <ion-label>
+          <h2> Languages </h2>
+          <h3 *ngFor="let i of languages | keyvalue">
+           {{ i.value }}</h3>
+          </ion-label> 
+          <ion-textarea *ngFor="let c of countryCurrency | keyvalue"
+           placeholder="Enter {{c.value}}  amount"
+           [clearOnEdit]="true">
+         </ion-textarea>  
+   <ion-button [disabled]="true">Convert to EURO amount</ion-button>
+   <ion-list>
+    <h2></h2>
+   </ion-list>
+  </ion-card>
+</ion-content>
