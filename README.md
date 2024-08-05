@@ -27,8 +27,8 @@ Aim of the project was to provide the country information using the restcountrie
 ![Countries-API](Screenshot03.png)
 ![Countries-API](Screenshot04.png)
 
-The design of the programme I used three classes:
+The design of the programme I used the below APIs:
 
-1.	The Server Class – to set up the Server and the port to be used for when clients are looking to join 
-2.	The Client Class -  to set up clients that can access the server, let them type in their names, allow them to write messages on the server, by using Threads with Client Handler
-3.	The ClientHandler Class – to set up the threads, allow the messages from the clients be read in the server by using a BufferedReader
+1.	Countries API -  To get the name of the countries, flag, currency and population 
+2.	Weather using latitude and longitiude API -  To get the real time weather information of the countries based on the country's latitude and longitude 
+3.	Exchange-Rate API - Used to get the conversion rate of the country's currency aganist the Euro
