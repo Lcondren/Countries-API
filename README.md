@@ -19,13 +19,13 @@ Aim of the project was to provide the country information using the restcountrie
 
 #### Instructions to run the Programme:
 1.	Use the cmd command on the project folder and enter in code . which will bring you into the code environment
-![Countries-API](screenshot01.png)
+![Countries-API](Screenshot01.png)
 2.	Run Ionic serve in VS code to run the application in a webserver
-![Countries-API](screenshot02.png)
+![Countries-API](Screenshot02.png)
 !
 3.	Click into any of the countries and it will provide the country details of that particular country
-![Countries-API](screenshot03.png)
-![Countries-API](screenshot04.png)
+![Countries-API](Screenshot03.png)
+![Countries-API](Screenshot04.png)
 
 The design of the programme I used three classes:
 
